@@ -35,7 +35,7 @@ No plugins. No database. Works with Obsidian, Logseq, plain Git, or any AI memor
 | Y3 | Experience | Conversations, actions |
 | Y4 | Journal | Opinions, reflections |
 | Y5 | Procedural | Workflows, skills |
-| Y6 | Metacognitive | Self-awareness |
+| Y6 | Metacognitive | Self-assessment (calibration, coverage) |
 
 **See:** [y-layers-spec.md](y-layers-spec.md) for the full specification.
 
@@ -318,7 +318,7 @@ graph.add((subject, predicate, object))  # Persists immediately
 - Parser: `graph.parse(format="yurtle")` for Turtle/YAML frontmatter
 - Serializer: `graph.serialize(format="yurtle")` with markdown preservation
 - Store: Bidirectional sync between graph and filesystem
-- 55+ tests, Python 3.9-3.13 support
+- Tests and supported Python versions: see yurtle-rdflib's [`pyproject.toml`](https://github.com/hankh95/yurtle-rdflib/blob/main/pyproject.toml) and test suite
 
 ---
 
@@ -326,7 +326,8 @@ graph.add((subject, predicate, object))  # Persists immediately
 
 | Version | Date | Changes |
 |---------|------|---------|
-| **v2.0** | Feb 2026 | Y-layer specification (7 layers: Y0-Y6) for AI beings |
+| **v2.1** | Jul 2026 | `yurtle-table` block: tabular RDF (one markdown table, human-scannable and machine-queryable) |
+| v2.0 | Feb 2026 | Y-layer specification (7 layers: Y0-Y6) for AI beings |
 | v1.3 | Dec 2025 | Yurtle blocks with code fence syntax |
 | v1.2 | Dec 2025 | Three-layer model, infoboxes |
 | v1.1 | Dec 2025 | Hierarchy (index, parent, children) |
